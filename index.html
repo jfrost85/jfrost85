@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal Dispute Dossier | Rivera v. Northgate Logistics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content wrap">
+      <p class="eyebrow">Confidential Draft · Legal Work Product</p>
+      <h1>Dispute Dossier</h1>
+      <p class="subtitle">Rivera v. Northgate Logistics, LLC · Wrongful termination, unpaid wages, retaliation</p>
+      <div class="meta-grid">
+        <article>
+          <h2>Prepared for</h2>
+          <p>Counsel Team · Plaintiff</p>
+        </article>
+        <article>
+          <h2>Jurisdiction</h2>
+          <p>State Superior Court · Los Angeles County</p>
+        </article>
+        <article>
+          <h2>Version</h2>
+          <p>v1.0 · Dossier-ready</p>
+        </article>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+    <section class="panel overview">
+      <h2>Case overview</h2>
+      <p>
+        Plaintiff <strong>Elena Rivera</strong> alleges that Northgate Logistics terminated her employment after she reported unpaid overtime, meal-break violations, and falsified route logs to HR.
+        Defendant maintains termination was performance-based. The integrated exhibits below map chronology, witness statements, payroll records, and internal communications.
+      </p>
+      <div class="tags">
+        <span>Wage & hour</span>
+        <span>Retaliation</span>
+        <span>Whistleblower</span>
+        <span>Document-heavy matter</span>
+      </div>
+    </section>
+
+    <section class="panel claims">
+      <h2>Claims and legal elements</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Claim</th>
+              <th>Key elements</th>
+              <th>Primary support</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Unpaid overtime</td>
+              <td>Hours worked > compensated hours; employer knowledge</td>
+              <td>Exhibit B, Exhibit E</td>
+            </tr>
+            <tr>
+              <td>Meal/rest violations</td>
+              <td>Missed or late breaks without premium pay</td>
+              <td>Exhibit C, Exhibit H</td>
+            </tr>
+            <tr>
+              <td>Retaliatory termination</td>
+              <td>Protected complaint; adverse action; causal link</td>
+              <td>Exhibit A, Exhibit D, Exhibit F</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel timeline">
+      <h2>Timeline with embedded exhibits</h2>
+
+      <article class="timeline-item">
+        <div class="date">Mar 4, 2025</div>
+        <div class="content">
+          <h3>Internal complaint submitted to HR</h3>
+          <p>Rivera reported repeated nonpayment of overtime and altered route completion records.</p>
+          <details class="exhibit" open>
+            <summary>Exhibit A · HR complaint email</summary>
+            <div class="doc">
+              <p><strong>From:</strong> elena.rivera@northgate-log.com</p>
+              <p><strong>To:</strong> hr@northgate-log.com</p>
+              <p><strong>Subject:</strong> Timekeeping discrepancies and missed meal periods</p>
+              <hr>
+              <p>I am documenting that dispatch instructed us to “close routes on paper” before actual completion. This has removed overtime from the last two pay cycles...</p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="date">Mar 17, 2025</div>
+        <div class="content">
+          <h3>Payroll discrepancy identified</h3>
+          <p>Comparison of telematics logs and payroll entries indicates an average 6.4 unpaid hours per week.</p>
+          <details class="exhibit">
+            <summary>Exhibit B · Payroll vs telematics variance sheet</summary>
+            <div class="doc mono">
+Week Ending   Logged Hours   Paid Hours   Variance
+03/08/2025      52.1           44.0        +8.1
+03/15/2025      49.5           43.0        +6.5
+03/22/2025      50.4           44.5        +5.9
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="date">Apr 2, 2025</div>
+        <div class="content">
+          <h3>Supervisor warning memo</h3>
+          <p>Memo references Rivera as “not aligned with operational culture” one day after follow-up complaint.</p>
+          <details class="exhibit">
+            <summary>Exhibit D · Supervisor memo excerpt</summary>
+            <div class="doc">
+              <p>“Employee has escalated concerns beyond department channels and may not be a long-term fit for dispatch workflow expectations.”</p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="date">Apr 10, 2025</div>
+        <div class="content">
+          <h3>Termination notice issued</h3>
+          <p>Termination reason listed as performance inconsistency despite positive quarterly review dated Feb 15, 2025.</p>
+          <details class="exhibit">
+            <summary>Exhibit F · Termination notice</summary>
+            <div class="doc">
+              <p><strong>Reason code:</strong> P-17 (performance inconsistency)</p>
+              <p><strong>Effective:</strong> Immediate</p>
+              <p><strong>Prior discipline attached:</strong> None</p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel evidence-grid">
+      <h2>Exhibit bank</h2>
+      <p class="section-note">Filter by category to keep the dossier free-flowing during review.</p>
+      <div class="filters" role="group" aria-label="Exhibit filters">
+        <button class="filter-btn is-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="communication">Communications</button>
+        <button class="filter-btn" data-filter="payroll">Payroll</button>
+        <button class="filter-btn" data-filter="witness">Witness</button>
+      </div>
+      <div class="cards">
+        <article class="card" data-category="communication">
+          <h3>Exhibit A</h3>
+          <p>Initial HR complaint email with timestamp metadata.</p>
+        </article>
+        <article class="card" data-category="payroll">
+          <h3>Exhibit B</h3>
+          <p>3-week variance between telematics and paid hours.</p>
+        </article>
+        <article class="card" data-category="witness">
+          <h3>Exhibit H</h3>
+          <p>Driver declaration on dispatcher break-denial policy.</p>
+        </article>
+        <article class="card" data-category="communication">
+          <h3>Exhibit D</h3>
+          <p>Manager memo suggesting retaliatory motive language.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>Prepared for litigation strategy and settlement evaluation only.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+:root {
+  --bg: #f4f5f7;
+  --panel: #ffffff;
+  --ink: #1b2230;
+  --muted: #566074;
+  --accent: #223a76;
+  --line: #d8deea;
+  --soft: #eef2f8;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+.wrap {
+  width: min(1120px, 92vw);
+  margin: 0 auto;
+}
+
+.hero {
+  background: linear-gradient(140deg, #16284f, #203a72);
+  color: #fff;
+  padding: 3rem 0 2rem;
+  box-shadow: inset 0 -1px 0 rgba(255,255,255,.15);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .78rem;
+  opacity: .85;
+}
+
+h1 { margin: .2rem 0 .7rem; font-size: clamp(1.9rem, 3.8vw, 3rem); }
+.subtitle { max-width: 72ch; opacity: .95; }
+
+.meta-grid {
+  margin-top: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: .85rem;
+}
+
+.meta-grid article {
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.22);
+  padding: .8rem 1rem;
+  border-radius: .7rem;
+}
+.meta-grid h2 { font-size: .8rem; margin: 0 0 .15rem; font-weight: 600; opacity: .85; }
+.meta-grid p { margin: 0; font-weight: 500; }
+
+.layout {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem auto 2rem;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: .9rem;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 10px 24px rgba(19, 30, 53, 0.04);
+}
+
+.panel h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.tags { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .75rem; }
+.tags span {
+  background: var(--soft);
+  color: #24365d;
+  border: 1px solid #d8e2f5;
+  border-radius: 999px;
+  padding: .28rem .62rem;
+  font-size: .78rem;
+  font-weight: 600;
+}
+
+.table-wrap { overflow-x: auto; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+}
+th, td {
+  border-bottom: 1px solid var(--line);
+  padding: .65rem .55rem;
+  text-align: left;
+  vertical-align: top;
+}
+th { background: #f6f8fc; font-size: .82rem; text-transform: uppercase; letter-spacing: .04em; }
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: .8rem;
+  padding: .8rem 0;
+  border-bottom: 1px dashed var(--line);
+}
+.timeline-item:last-child { border-bottom: none; }
+.date {
+  font-weight: 700;
+  color: #2a3f70;
+  font-size: .9rem;
+}
+.timeline-item h3 { margin: 0 0 .22rem; }
+.timeline-item p { margin: 0 0 .5rem; color: var(--muted); }
+
+.exhibit summary {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+}
+.exhibit summary::-webkit-details-marker { display: none; }
+.exhibit summary::before {
+  content: "▸";
+  margin-right: .35rem;
+}
+.exhibit[open] summary::before { content: "▾"; }
+
+.doc {
+  margin-top: .45rem;
+  border: 1px solid #cdd7ea;
+  background: #fcfdff;
+  border-radius: .55rem;
+  padding: .75rem;
+  font-family: "Source Serif 4", serif;
+}
+.doc hr { border: none; border-top: 1px solid #dce2ee; margin: .65rem 0; }
+.doc p { margin: .35rem 0; color: #1a2437; }
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  white-space: pre;
+  font-size: .89rem;
+}
+
+.section-note { margin-top: -.2rem; color: var(--muted); }
+.filters { display: flex; flex-wrap: wrap; gap: .45rem; margin-bottom: .65rem; }
+.filter-btn {
+  border: 1px solid #c4d1eb;
+  background: #f7faff;
+  border-radius: 999px;
+  padding: .35rem .7rem;
+  font-weight: 600;
+  color: #294272;
+  cursor: pointer;
+}
+.filter-btn.is-active {
+  background: #294272;
+  color: #fff;
+  border-color: #294272;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: .7rem;
+}
+.card {
+  border: 1px solid var(--line);
+  border-radius: .65rem;
+  padding: .75rem;
+  background: #fff;
+}
+.card h3 { margin: 0 0 .3rem; font-size: 1rem; }
+.card p { margin: 0; color: var(--muted); font-size: .92rem; }
+.card.is-hidden { display: none; }
+
+.footer {
+  color: #576074;
+  font-size: .86rem;
+  padding: .3rem 0 2rem;
+}
+
+@media (max-width: 680px) {
+  .timeline-item { grid-template-columns: 1fr; gap: .3rem; }
+  .date { font-size: .8rem; }
+}
